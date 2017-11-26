@@ -9,9 +9,9 @@ define(['jquery', 'knockout', './router', 'bootstrap'], function ($, ko, router)
     template: { require: 'text!components/account-page/account.html' }
   });
   
-  ko.components.register('listing-page', { require: 'components/listing-page/plp'});
-  ko.components.register('product-page', { require: 'components/product-page/pdp'});
-  ko.components.register('cart-page', { require: 'components/cart-page/cart' });
+  ko.components.register('contact-page', { require: 'components/contact-page/contact'});
+  ko.components.register('hobbies-page', { require: 'components/hobbies-page/hobbies'});
+  ko.components.register('biography-page', { require: 'components/biography-page/biography' });
 
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 

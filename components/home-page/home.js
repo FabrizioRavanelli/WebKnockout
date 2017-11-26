@@ -1,8 +1,11 @@
-define(["knockout", "text!./home.html"], function (ko, homeTemplate) {
+define(["knockout", "text!./home.html"], function (ko, template) {
 
-  function HomeViewModel(route) {
+  function ViewModel(route) {
     
+    return {
+      myMessage: ko.observable("Siggi!")
+    };
   }
 
-  return { viewModel: HomeViewModel, template: homeTemplate };
+  return { viewModel: ViewModel, template: template };
 });
