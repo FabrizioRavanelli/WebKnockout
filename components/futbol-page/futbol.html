@@ -1,0 +1,37 @@
+<div class="container">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2>Resultats</h2>
+            </div>
+            <div class="panel-body">
+
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th>Dia i Hora</th>
+                        <th>Local</th>
+                        <th>Visitant</th>
+                        <th>Jornada</th>
+                        <th>Status</th>
+                        <th>Resultat</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: matches">
+                        <tr>
+                            <td><span data-bind="text: $parent.getDate($data.date)"></span></td>
+                            <td><span data-bind="text: $data.homeTeamName"></span></td>
+                            <td><span data-bind="text: $data.awayTeamName"></span></td>
+                            <td><span data-bind="text: $data.matchday"></span></td>
+                            <td><span data-bind="text: $data.status"></span></td>
+                            <td><span data-bind="text: $data.result.goalsHomeTeam"></span>-<span data-bind="text: $data.result.goalsAwayTeam"></span> 
+                                <!-- ko if: $data.result.halfTime -->
+                                (<span data-bind="text: $data.result.halfTime.goalsHomeTeam"></span>-<span data-bind="text: $data.result.halfTime.goalsAwayTeam"></span>)
+                                <!-- /ko -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

@@ -12,7 +12,8 @@ define(['jquery', 'knockout', './router', 'bootstrap'], function ($, ko, router)
   ko.components.register('contact-page', { require: 'components/contact-page/contact'});
   ko.components.register('hobbies-page', { require: 'components/hobbies-page/hobbies'});
   ko.components.register('biography-page', { require: 'components/biography-page/biography' });
-
+  ko.components.register('futbol-page', { require: 'components/futbol-page/futbol' });
+  
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 
   // Start the application
